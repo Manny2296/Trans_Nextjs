@@ -1,0 +1,164 @@
+@import "../../theme/theme.scss";
+/* Position and sizing of burger button */
+.bm-burger-button {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    left: 15px;
+    top: 14px;
+    
+  }
+  
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: #373a47;
+  }
+  
+  /* Color/shape of burger icon bars on hover*/
+  .bm-burger-bars-hover {
+    background: linear-gradient(45deg, #e95a0c 30%, #e95a0c 90%);
+  }
+  
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+  
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #bdc3c7;
+  }
+  
+  .title{
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    //left: 38%;
+     
+    top: 14px;
+    height: min-content;
+    margin: auto;
+    
+    font-size: 0.7em;
+  }
+
+  /*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+  .bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+  }
+  
+  /* General sidebar styles */
+  .bm-menu {
+    background: linear-gradient(45deg, #e95a0c 30%, #e95a0c 90%);
+    padding: 0.5em 0.5em 0;
+    font-size: 1em;
+  }
+  
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+  
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #222222;
+    padding: 0.6em;
+  }
+  .bm-item:focus {
+    outline: none;
+  }
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+    color: #fff;
+    //margin: 2px;[
+    padding-top: inherit;
+    text-decoration: none;
+  }
+  .bm-Headermenu:focus {
+    outline: none;
+  }
+  .bm-Headermenu {
+    display: inline-block;
+    color: white;
+    //margin: 2px;[
+    padding-top: inherit;
+    text-decoration: none;
+
+  }
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .exit{
+   
+    
+    width: 10%;
+   margin-right: 15px ;
+   float: right;
+   
+  }
+.inputLogout{
+  display: none;
+}
+.botoni{
+ 
+ //no lo pude implementa con imagen local ?
+  //background-image: image-set("./image/exit.png");
+ background-color: transparentize($color: #ffffff00, $amount: 0);
+ background-image: requ;
+  background-repeat: no-repeat;
+ background-position: center;
+ height: 50px;
+ width: 10%;
+  margin-right: 15px ;
+  float: right;
+}
+  
+  .imgLogo{
+  
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+  width: auto;
+ padding: 10px;
+ border-radius: 10px;
+ border: 2px solid #8f8f8f;
+   //height: 60px;
+   //float: right;
+   
+  }
+.Header {
+  justify-content: flex-start;
+  align-items: center;
+
+  height: 50px;
+  width: 100%;
+
+  //padding: 0 20px;
+
+  font-family: $logo-font;
+  font-size: 24px;
+  font-weight: bold;
+  color: $on-secondary;
+  text-transform: uppercase;
+    background: linear-gradient(45deg, #0dcbbf 30%, rgb(13, 203, 191) 90%);
+   
+     cursor: pointer;
+    
+    //position: fixed;
+   // height: 60px;
+   // width: 100%;
+    //font-family: $logo-font;
+    //font-size: 24px;
+    //font-weight: bold;
+    //color: $on-secondary;
+    //background: linear-gradient(45deg, #0dcbbf 30%, rgb(13, 203, 191) 90%);
+    
+}
