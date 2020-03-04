@@ -133,7 +133,7 @@ maquinaprofile.getInitialProps = async({ query,store}) => {
     //const data = await res.json();
    // console.log('https://winged-pen-261210.appspot.com/users/'+ query.id)
       console.log(query.nombre);
-      const res = await fetch('http://localhost:8081/maquinas/' + query.nombre);
+      const res = await fetch('https://transcar.appspot.com/maquinas/' + query.nombre);
       const data = await res.json();
       
       //console.log(`Show data fetched. Count: ${data.length}`  );
