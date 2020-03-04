@@ -6,8 +6,7 @@ import fetch from 'isomorphic-unfetch';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import '../../componentes/styles/nombre.scss'
-import Keyboard from 'react-simple-keyboard';
-import 'react-simple-keyboard/build/css/index.css';
+
 const textinputdisabled = {
     background: '#e0e0e0',
     borderRadius: 3,
