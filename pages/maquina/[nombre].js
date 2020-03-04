@@ -37,25 +37,6 @@ class maquinaprofile extends Component {
         this._loadSaldo()
     }
 
-    componentDidMount() {
-        if (window) {
-          import("react-simple-keyboard").then(KeyboardClass => {
-            const Keyboard = KeyboardClass.default
-            const { onChange, onKeyPress } = this;
-    
-            this.keyboard = new Keyboard({ onChange, onKeyPress });
-          })
-        }
-      }
-    
-    onChange = (input) => {
-        console.log("Input changed", input);
-      }
-    
-      onKeyPress = (button) => {
-        console.log("Button pressed", button);
-      }
-    
    async _loadSaldo(){
    
         const res = await fetch('http://localhost:8081/transaccion/suma/');
@@ -74,13 +55,7 @@ class maquinaprofile extends Component {
         )
 
     }
-    onChange = (input) => {
-        console.log("Input changed", input);
-      }
-    
-      onKeyPress = (button) => {
-        console.log("Button pressed", button);
-      }
+   
     render() {
         console.log(this.state.maquina[0].nombre)
         console.log("Saldo" + this.state.saldomaquina)
@@ -143,10 +118,7 @@ class maquinaprofile extends Component {
 
         </Grid>
       </Grid>
-      <Keyboard
-        onChange={this.onChange}
-        onKeyPress={this.onKeyPress}
-      />
+    
             </PlantillaG>
         
         
